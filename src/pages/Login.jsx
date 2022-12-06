@@ -10,7 +10,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const submit = (data) => {
-    axios.post('https://ecommerce-api-react.herokuapp.com/api/v1/users/login', data)
+    axios.post('https://e-commerce-api.academlo.tech/api/v1/users/login', data)
       .then(res => {
         localStorage.setItem('token', res.data.data.token);
         navigate('/');
@@ -33,13 +33,13 @@ const Login = () => {
             <Card.Text>
               Test Data
               <br></br>
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24"  stroke="#ffffff" fill="none" >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <rect x="3" y="5" width="18" height="14" rx="2" />
                 <polyline points="3 7 12 13 21 7" />
               </svg> john@gmail.com
               <br></br>
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-key" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-key" width="20" height="20" viewBox="0 0 24 24" stroke="#ffffff" fill="none" >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <circle cx="8" cy="15" r="4" />
                 <line x1="10.85" y1="12.15" x2="19" y2="4" />

@@ -21,7 +21,7 @@ dispatch(getPurchasesThunk())
   return (
     <Offcanvas show={show} onHide={handleClose}>
       <Offcanvas.Header closeButton>
-        <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        <Offcanvas.Title>CartThunk</Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body>
         <ListGroup>

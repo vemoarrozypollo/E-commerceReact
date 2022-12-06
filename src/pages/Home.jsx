@@ -14,7 +14,7 @@ const Home = () => {
   const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
-    axios.get('https://ecommerce-api-react.herokuapp.com/api/v1/products/categories')
+    axios.get('https://e-commerce-api.academlo.tech/api/v1/products/categories')
       .then(res => setCategories(res.data.data.categories))
   }, []);
 
@@ -61,9 +61,9 @@ const Home = () => {
             variant="outline-secondary"
             id="button-addon2">
             <svg xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-shopping-cart"
-              width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              className="icon icon-tabler icon-tabler-shopping-cart"
+              width="20" height="20" viewBox="0 0 24 24"
+              stroke="#ffffff" fill="none">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <circle cx="6" cy="19" r="2" />
               <circle cx="17" cy="19" r="2" />
@@ -83,9 +83,9 @@ const Home = () => {
                     <Card.Img src={product.productImgs[0]} />
                   </Card.Body>
                   <p> <svg xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-shopping-cart"
-              width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              className="icon icon-tabler icon-tabler-shopping-cart"
+              width="20" height="20" viewBox="0 0 24 24" 
+              stroke="#ffffff" fill="none" >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <circle cx="6" cy="19" r="2" />
               <circle cx="17" cy="19" r="2" />
